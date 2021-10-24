@@ -1,0 +1,36 @@
+#include<iostream>
+#include<conio.h>
+#include<iomanip>
+
+using namespace std;
+
+main()
+{
+	int n,i,j;
+	
+	cout <<"\t||---------------------------------||"<<endl;
+	cout <<"\t||	Tampilan Segitiga Angka	   ||"<<endl;
+	cout <<"\t||---------------------------------||"<<endl<<endl;
+	
+	cout <<" Masukkan tinggi segitiga : "; cin >>n;
+	cout <<"\n";
+	for (i=1; i<=n; i++)
+	{
+	for (j=1; j<=i; j++)
+	{
+	cout<<""<<j;
+	}
+	cout<<" \n";
+	}
+	for (i=n-1; i>=1; i--)
+	{
+	for (j=1; j<=i; j++)
+	{
+	cout<<""<<j;
+	}
+	cout<<" \n";
+	}
+	
+getch();
+
+}
